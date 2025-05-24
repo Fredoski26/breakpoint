@@ -5,7 +5,7 @@ import { Search, Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import TabSection from './TabSection.js';
 import BreakPointSection from './BreakPointSection.js';
 import SlbSolutions from './SlbSolutions.js';
-import logoImage from './images/logo.jpeg';
+import logoImage from './images/logo2.jpg';
 import logoImage1 from './images/image1.jpg';
 import logoImage2 from './images/image2.jpg';
 import logoImage3 from './images/image3.jpg';

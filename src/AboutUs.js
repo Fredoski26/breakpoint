@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import { X, Menu } from 'lucide-react';
-import logoImage from './images/logo.jpeg';
+import logoImage from './images/logo2.jpg';
 import logoImage1 from './images/image1.jpg';
 import logoImage2 from './images/image2.jpg';
 import logoImage3 from './images/image3.jpg';
@@ -332,12 +332,12 @@ export default function AboutUs() {
                                </Link>
                  
                  
-                               <Link to="/0" className="nav-item has-dropdown">
-                               <li className="nav-link">
-                                   <span>Contact Us</span>
-                                   {/* <ChevronDown size={16} /> */}
-                               </li>
-                               </Link>
+                               <Link to="/contact us" className="nav-item has-dropdown">
+                                             <li className="nav-link">
+                                                 <span>Contact Us</span>
+                                                 {/* <ChevronDown size={16} /> */}
+                                             </li>
+                                             </Link>
                  
                    
                              </ul>

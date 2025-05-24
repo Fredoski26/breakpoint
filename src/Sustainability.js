@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 import { ChevronDown, Leaf, Zap, Droplets, Wind, Globe, ArrowRight, Play, Pause, Volume2, VolumeX, Maximize, RotateCcw } from 'lucide-react';
 import './sustainable.css';
-import logoImage from './images/logo.jpeg';
+import logoImage from './images/logo2.jpg';
 import { Link } from 'react-router-dom';
 
 const Sustainability = () => {
@@ -205,12 +205,12 @@ const Sustainability = () => {
                         </Link>
           
           
-                        <Link to="/0" className="nav-item has-dropdown">
-                        <li className="nav-link">
-                            <span>Contact Us</span>
-                            {/* <ChevronDown size={16} /> */}
-                        </li>
-                        </Link>
+                        <Link to="/contact us" className="nav-item has-dropdown">
+                                      <li className="nav-link">
+                                          <span>Contact Us</span>
+                                          {/* <ChevronDown size={16} /> */}
+                                      </li>
+                                      </Link>
           
             
                       </ul>
