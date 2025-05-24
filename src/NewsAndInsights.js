@@ -278,7 +278,7 @@ const observer = new IntersectionObserver(
           </h1>
           
           <p className="hero-subtitle">
-            Explore SLB news and the thoughts and achievements of our folks 
+            Explore BreakPoint news and the thoughts and achievements of our folks 
             around the globe.
           </p>
           
