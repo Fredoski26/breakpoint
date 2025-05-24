@@ -99,16 +99,16 @@ const observer = new IntersectionObserver(
     {
       type: 'Press release',
       date: 'May 15, 2025',
-      title: 'SLB Announces First-Quarter 2025 Results',
-      description: 'SLB announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
+      title: 'BreakPoint Announces First-Quarter 2025 Results',
+      description: 'BreakPoint announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
       imageUrl: logoImage1,
       tag: 'press-releases'
     },
     {
       type: 'Press release',
       date: 'May 15, 2025',
-      title: 'SLB Announces First-Quarter 2025 Results',
-      description: 'SLB announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
+      title: 'BreakPoint Announces First-Quarter 2025 Results',
+      description: 'BreakPoint announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
       imageUrl: logoImage2,
       tag: 'press-releases'
     },
@@ -116,7 +116,7 @@ const observer = new IntersectionObserver(
       type: 'Feature story',
       date: 'May 10, 2025',
       title: 'Driving Sustainable Performance in Unconventional Plays',
-      description: 'How SLB technologies are transforming production efficiency while reducing environmental impact.',
+      description: 'How BreakPoint technologies are transforming production efficiency while reducing environmental impact.',
       imageUrl: logoImage3,
       tag: 'feature-stories'
     },
@@ -139,8 +139,8 @@ const observer = new IntersectionObserver(
     {
       type: 'Event',
       date: 'June 15-18, 2025',
-      title: 'SLB at Offshore Technology Conference 2025',
-      description: 'Join SLB at OTC 2025 to discover the latest innovations in offshore energy technology.',
+      title: 'BreakPoint at Offshore Technology Conference 2025',
+      description: 'Join BreakPoint at OTC 2025 to discover the latest innovations in offshore energy technology.',
       imageUrl: logoImage3,
       tag: 'events'
     },
@@ -148,7 +148,7 @@ const observer = new IntersectionObserver(
       type: 'Report',
       date: 'April 20, 2025',
       title: 'Energy Transition Outlook 2025',
-      description: 'SLB\'s comprehensive analysis of the evolving energy landscape and pathways to decarbonization.',
+      description: 'BreakPoint\'s comprehensive analysis of the evolving energy landscape and pathways to decarbonization.',
       imageUrl: logoImage2,
       tag: 'reports'
     }
@@ -320,7 +320,7 @@ const observer = new IntersectionObserver(
             <div className="md:w-1/2">
               <img 
                 src={logoImage3} 
-                alt="SLB News and Insights" 
+                alt="BreakPoint News and Insights" 
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
