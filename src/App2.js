@@ -56,7 +56,7 @@ const Navbar = ({ scrolled }) => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-blue-800">SLB</div>
+            <div className="text-2xl font-bold text-blue-800">BreakPoint</div>
           </div>
           
           <div className="hidden lg:flex space-x-8">
@@ -137,14 +137,14 @@ const Hero = () => {
           <div className="md:w-1/2 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Digital Innovation for Energy Progress</h1>
             <p className="text-xl mb-8">
-              SLB is a global technology company driving energy innovation for a balanced planet.
+              BreakPoint is a global technology company driving energy innovation for a balanced planet.
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-white text-blue-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium">
                 Explore Solutions
               </button>
               <button className="bg-transparent border border-white text-white hover:bg-blue-800 px-6 py-3 rounded-lg font-medium">
-                Learn About SLB
+                Learn About BreakPoint
               </button>
             </div>
           </div>

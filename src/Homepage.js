@@ -110,9 +110,9 @@ const Homepage = () => {
           <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
             <ul className="nav-list">
 
-               <Link to="/" className="nav-item has-dropdown">
+              <Link to="/about" className="nav-item has-dropdown">
               <li className="nav-link">
-                  <span>Solutions</span>
+                  <span>About</span>
                   {/* <ChevronDown size={16} /> */}
               </li>
               </Link>
@@ -124,6 +124,22 @@ const Homepage = () => {
               </li>
               </Link>
 
+              <Link to="/sustainability" className="nav-item has-dropdown">
+              <li className="nav-link">
+                  <span>Sustainability</span>
+                  {/* <ChevronDown size={16} /> */}
+              </li>
+              </Link>
+
+               <Link to="/" className="nav-item has-dropdown">
+              <li className="nav-link">
+                  <span>Solutions</span>
+                  {/* <ChevronDown size={16} /> */}
+              </li>
+              </Link>
+
+              
+
               <Link to="/insights" className="nav-item has-dropdown">
               <li className="nav-link">
                   <span>News and Insights</span>
@@ -131,19 +147,15 @@ const Homepage = () => {
               </li>
               </Link>
 
-               <Link to="/sustainability" className="nav-item has-dropdown">
+
+              <Link to="/0" className="nav-item has-dropdown">
               <li className="nav-link">
-                  <span>Sustainability</span>
+                  <span>Contact Us</span>
                   {/* <ChevronDown size={16} /> */}
               </li>
               </Link>
-              
-              <Link to="/about" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>About</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
+
+  
             </ul>
           </nav>
 

@@ -186,45 +186,57 @@ const observer = new IntersectionObserver(
             {/* <a href="/" className="logo-link">BreakPoint</a> */}
           </div>
 
-          <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
-            <ul className="nav-list">
-
-               <Link to="/" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>Solutions</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
-
-              <Link to="/products" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>Products & Services</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
-
-              <Link to="/insights" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>News and Insights</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
-
-               <Link to="/sustainability" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>Sustainability</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
-              
-              <Link to="/about" className="nav-item has-dropdown">
-              <li className="nav-link">
-                  <span>About</span>
-                  {/* <ChevronDown size={16} /> */}
-              </li>
-              </Link>
-            </ul>
-          </nav>
+           <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
+                      <ul className="nav-list">
+          
+                        <Link to="/about" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>About</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+                        <Link to="/products" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>Products & Services</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+                        <Link to="/sustainability" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>Sustainability</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+                         <Link to="/" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>Solutions</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+                        
+          
+                        <Link to="/insights" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>News and Insights</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+          
+                        <Link to="/0" className="nav-item has-dropdown">
+                        <li className="nav-link">
+                            <span>Contact Us</span>
+                            {/* <ChevronDown size={16} /> */}
+                        </li>
+                        </Link>
+          
+            
+                      </ul>
+                    </nav>
 
           <div className="header-actions">
             {/* <button className="search-btn">
