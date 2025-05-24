@@ -411,7 +411,7 @@ const observer = new IntersectionObserver(
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay up to date</h2>
             <p className="text-lg text-gray-700 mb-8">
-              Subscribe to our newsletter for the latest news, insights, and innovations from SLB
+              Subscribe to our newsletter for the latest news, insights, and innovations from BreakPoint
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
               <input
@@ -452,7 +452,7 @@ const observer = new IntersectionObserver(
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Contact us</h3>
               <p className="text-gray-700 mb-4">
-                Get in touch with our media relations team or find your local SLB office
+                Get in touch with our media relations team or find your local BreakPoint office
               </p>
               <a href="#" className="flex items-center text-blue-800 font-medium hover:text-blue-600">
                 Learn more <ArrowRight size={16} className="ml-1" />
