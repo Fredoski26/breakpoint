@@ -148,7 +148,7 @@ const Homepage = () => {
               </Link>
 
 
-              <Link to="/0" className="nav-item has-dropdown">
+              <Link to="/contact us" className="nav-item has-dropdown">
               <li className="nav-link">
                   <span>Contact Us</span>
                   {/* <ChevronDown size={16} /> */}
