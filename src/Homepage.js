@@ -224,14 +224,19 @@ const Homepage = () => {
                 }}
               >
                 <h1 className="hero-titlee">
-                  <span className="text-reveal">Powering</span>
-                  <span className="text-reveal" style={{ '--delay': '0.2s' }}>Energy Innovation</span>
+                  <span className="text-reveal">Breakpoint </span>
+                  <span className="text-reveal" style={{ '--delay': '0.2s' }}>Energy Services </span>
                 </h1>
                 <p className="hero-subtitlee text-reveal" style={{ '--delay': '0.4s' }}>
-                  Driving sustainability and performance in the energy industry through technology and digital solutions
+                  We are not just builders — we are strategic partners
                 </p>
                 <a href="#commitment" className="hero-cta text-reveal" style={{ '--delay': '0.6s' }}>
-                  <span>Discover More</span>
+                  <span>
+                    <ul>
+                <li><a href="/product"> Discover More</a></li>
+                </ul> 
+                  </span>
+                  
                   <ArrowRight className="w-5 h-5 arrow-bounce" />
                 </a>
               </div>
@@ -274,14 +279,14 @@ const Homepage = () => {
       {/* Solutions Section */}
       <section className="solutions">
       <div className="container">
-        <h2 className="section-title">Our Solutions</h2>
+        <h2 className="section-title">Our Advanced Inspection </h2>
         <div className="solutions-grid">
           <div className="solution-card">
             <div className="solution-img" style={{backgroundColor: '#155E75', overflow: 'hidden'}}>
               <img src={logoImage1} alt="Digital Solutions" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Digital Solutions</h3>
-            <p>Transforming operations through data-driven technology and AI.</p>
+            <h4  className="colorh">Magnetic Particle Inspection (MPI)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
           
@@ -289,8 +294,8 @@ const Homepage = () => {
             <div className="solution-img" style={{backgroundColor: '#0F766E', overflow: 'hidden'}}>
               <img src={logoImage2} alt="Sustainability" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Sustainability</h3>
-            <p>Advancing sustainable energy production and reducing environmental impact.</p>
+            <h4 className="colorh">Dye Penetrant Inspection (DPI)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
           
@@ -298,8 +303,8 @@ const Homepage = () => {
             <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
               <img src={logoImage3} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Production Optimization</h3>
-            <p>Maximizing resource recovery with innovative solutions.</p>
+            <h4 className="colorh">Ultrasonic Testing (UT)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
           
@@ -307,8 +312,8 @@ const Homepage = () => {
             <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
               <img src={logoImage4} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Production Optimization</h3>
-            <p>Maximizing resource recovery with innovative solutions.</p>
+            <h4 className="colorh">Eddy Current Testing (ECT)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
           
@@ -316,8 +321,8 @@ const Homepage = () => {
             <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
               <img src={logoImage1} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Production Optimization</h3>
-            <p>Maximizing resource recovery with innovative solutions.</p>
+            <h4 className="colorh">Radiographic Testing (RT)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
           
@@ -325,8 +330,35 @@ const Homepage = () => {
             <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
               <img src={logoImage2} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
             </div>
-            <h3>Production Optimization</h3>
-            <p>Maximizing resource recovery with innovative solutions.</p>
+            <h4 className="colorh">Boroscopic Inspection</h4>
+            <p></p>
+            <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
+          </div>
+
+          <div className="solution-card">
+            <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
+              <img src={logoImage2} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h4 className="colorh">Hardness Testing</h4>
+            <p></p>
+            <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
+          </div>
+
+          <div className="solution-card">
+            <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
+              <img src={logoImage2} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h4 className="colorh">Time of Flight Diffraction (TOFD)</h4>
+            <p></p>
+            <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
+          </div>
+
+          <div className="solution-card">
+            <div className="solution-img" style={{backgroundColor: '#047857', overflow: 'hidden'}}>
+              <img src={logoImage2} alt="Production Optimization" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <h4 className="colorh">Alternating Current Field Measurement (ACFM)</h4>
+            <p></p>
             <a href="#" className="solution-link">Learn More <ArrowRight size={14} /></a>
           </div>
         </div>
@@ -337,8 +369,8 @@ const Homepage = () => {
       <section className="featured">
         <div className="container">
           <div className="featured-content">
-            <h2>Leading Through Technology</h2>
-            <p>BreakPoint is driving the future of energy with innovative technologies that improve performance and sustainability across the industry.</p>
+            <h2>At Breakpoint Energy Services </h2>
+            <p>our Rope Access Inspection services are more than just a method of working at height—they are a strategic advantage. We empower our clients to maintain operational integrity, enhance safety compliance, and control costs—without compromise.</p>
             <a href="#" className="btn btn-secondary">
               Explore Our Approach
               <ArrowRight size={16} />

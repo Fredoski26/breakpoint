@@ -70,35 +70,63 @@ const ProductsAndServices = () => {
 
   const services = [
     {
-      title: "Digital Solutions",
-      description: "Transform your operations with cutting-edge digital technologies and AI-powered insights.",
+      title: "Our Rope Access Service Capabilities ",
+      description: "Our Rope Access Service Capabilities Include",
       icon: <Globe className="w-8 h-8" />,
-      features: ["AI & Machine Learning", "Cloud Solutions", "Data Analytics", "IoT Integration"]
+      features: ["Structural & Component Inspections", "Non-Destructive Testing (NDT)", "Lifting Gear and Pipework Inspection", "Blasting & Coating Application", "Welding & Hot Works", "Electrical & Instrumentation Works", "Confined Space Entry Support", "Maintenance and Emergency Repairs "]
     },
     {
-      title: "Energy Solutions",
-      description: "Comprehensive energy solutions for sustainable and efficient operations worldwide.",
+      title: "Rope Access Tradesmen ",
+      description: "Our Rope Access Tradesmen Include.",
       icon: <Zap className="w-8 h-8" />,
-      features: ["Renewable Energy", "Energy Efficiency", "Power Systems", "Grid Solutions"]
+      features: ["IRATA-Certified NDT Technicians", "Welders & Fabricators", "Blasters & Painters", "Pipe Fitters & Riggers", "Mechanical & Electrical Engineers","Insulators & Plumbers","General Maintenance Specialists"]
     },
+   
+  ];
+
+  const services1 = [
+    
     {
-      title: "Engineering Services",
-      description: "Advanced engineering and technical services for complex industrial challenges.",
+      title: "World-Class Procurement Services",
+      description: "We leverage deep global partnerships and a vast network of Original Equipment Manufacturers (OEMs), certified vendors, and international suppliers to source and deliver premium materials and equipment. From routine consumables to high-value project-critical assets, our procurement capabilities are tailored to meet project timelines and technical specifications with precision",
       icon: <Settings className="w-8 h-8" />,
-      features: ["Process Engineering", "System Design", "Technical Consulting", "Project Management"]
+      features: ["Oilfield and drilling equipment", "Mechanical, electrical & instrumentation components", "Process automation systems and spares", "Personal Protective Equipment (PPE) and safety gear", "Chemicals, lubricants, and specialized industrial materials" ]
+    },
+    
+  ];
+
+  const services2 = [
+  
+    {
+      title: "Our Drilling Service Capabilities",
+      description: "Our Drilling Service Capabilities Include.",
+      icon: <Settings className="w-8 h-8" />,
+      features: ["Well Planning and Engineering", "Onshore and Offshore Drilling Operations", "Directional & Horizontal Drilling", "HPHT & Deep Well Drilling", "Mud Engineering & Solids Control", "Real-Time Drilling Monitoring & Remote Support", "Wellbore Cleanout and Completion Preparation"]
+    },
+    
+  ];
+
+  const services3 = [
+   
+    {
+      title: "Our Construction Capabilities",
+      description: "Our Construction Capabilities Include.",
+      icon: <Layers className="w-8 h-8" />,
+      features: ["Oil & Gas Facility Construction (Flow Stations, Manifolds, Compressor Stations)", "Pipeline Construction & Hydrotesting", "Civil Works (Foundations, Roadways, Drainage, Structural Concrete)", "Steel Structure Fabrication & Erection (Skids, Racks, Storage Tanks, Pressure Vessels)","Mechanical, Electrical & Instrumentation Installations","Modular and Pre-Engineered Building Systems","Commissioning and Start-Up Support","Erosion Control & Soil Stabilization Projects"]
     },
     {
-      title: "Integrated Solutions",
-      description: "End-to-end integrated solutions combining technology, expertise, and innovation.",
+      title: "Project Delivery Models",
+      description: "Project Delivery Models.",
       icon: <Layers className="w-8 h-8" />,
-      features: ["Full-Stack Solutions", "Custom Integration", "Scalable Architecture", "24/7 Support"]
+      features: ["EPC (Engineering, Procurement & Construction)", "Design-Build & Turnkey Solutions", "Public-Private Partnerships","Construction Management-at-Risk (CMAR)"]
     }
+    
   ];
 
   const stats = [
-    { number: "150+", label: "Countries Served" },
-    { number: "50k+", label: "Projects Delivered" },
-    { number: "25+", label: "Years Experience" },
+    { number: "101+", label: "Countries Served" },
+    { number: "20k+", label: "Projects Delivered" },
+    { number: "21+", label: "Years Experience" },
     { number: "99.9%", label: "Uptime Guarantee" }
   ];
 
@@ -183,9 +211,7 @@ const ProductsAndServices = () => {
                                           {/* <ChevronDown size={16} /> */}
                                       </li>
                                       </Link>
-          
-            
-                      </ul>
+                                      </ul>
                     </nav>
 
           <div className="header-actions">
@@ -232,16 +258,21 @@ const ProductsAndServices = () => {
               Future-Ready Solutions
             </h1>
             <p className="hero-descriptions">
-              Transforming industries through innovative technology, sustainable practices, and comprehensive digital solutions that drive global progress.
-            </p>
+     	At Breakpoint Energy Services Limited, we deliver world-class Inspection and Non-Destructive Testing (NDT) services that are engineered to exceed industry standards and client expectations.             </p>
             <div className="hero-buttonss">
               <button className="btn-primarys">
                 <Play className="w-5 h-5" />
-                Explore Solutions
+                
+                <ul>
+                <li><a href="/">Explore Solutions</a></li>
+                </ul>
                 <ArrowRight className="btn-arrow w-5 h-5" />
               </button>
               <button className="btn-secondary">
-                Learn More
+                
+                <ul>
+                <li><a href="/about">Learn More</a></li>
+                </ul>
               </button>
             </div>
           </div>
@@ -269,10 +300,12 @@ const ProductsAndServices = () => {
         <div className="services-container">
           <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
             <h2 className="section-title">
-              Our Services
+              Rope Access Inspection Services
             </h2>
             <p className="section-description">
-              Comprehensive solutions designed to meet the evolving needs of modern industries
+At Breakpoint Energy Services Limited, we redefine high-access operations through cutting-edge Rope Access Inspection services, engineered to deliver unmatched safety, efficiency, and cost-effectiveness in challenging environments. Our rope access program is built upon the globally recognized IRATA (Industrial Rope Access Trade Association) standards, ensuring the highest level of professionalism and compliance in every project we execute.
+Backed by highly skilled, IRATA-certified technicians, our Rope Access team is not only proficient in vertical access but also cross-trained across multiple disciplines. This enables us to carry out complex inspection, maintenance, and integrity management tasks safely and swiftly—without the need for disruptive, time-consuming scaffolding or heavy lifting equipment.
+
             </p>
           </div>
 
@@ -280,6 +313,212 @@ const ProductsAndServices = () => {
             {/* Service Cards */}
             <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
               {services.map((service, index) => (
+                <div
+                  key={index}
+                  className={`service-card ${activeService === index ? 'active' : ''}`}
+                  onClick={() => setActiveService(index)}
+                >
+                  <div className="service-card-header">
+                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                      {service.icon}
+                    </div>
+                    <h3 className="service-title">{service.title}</h3>
+                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                  </div>
+                  <p className="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Service Details */}
+            <div id="service-details" className={`service-details ${isVisible['service-details'] ? 'visible' : ''}`}>
+              <div className="service-details-card">
+                <div className="service-details-header">
+                  <div className="service-details-icon">
+                    {services[activeService].icon}
+                  </div>
+                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                </div>
+                
+                <p className="service-details-description">
+                  {services[activeService].description}
+                </p>
+
+                <div className="service-features">
+                  <h4 className="features-title">Key Features:</h4>
+                  {services[activeService].features.map((feature, index) => (
+                    <div key={index} className="feature-item">
+                      <CheckCircle className="feature-icon" />
+                      <span className="feature-text">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button className="service-details-btn">
+                  Learn More
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section">
+        <div className="services-container">
+          <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
+            <h2 className="section-title">
+              Drilling Services
+            </h2>
+            <p className="section-description">
+              At Breakpoint Energy Services Limited, we offer next-generation Drilling Services that merge precision engineering, technological innovation, and operational excellence to unlock energy resources safely, efficiently, and sustainably.
+Our highly specialized drilling engineering team is adept at designing and executing complex well construction projects, both onshore and offshore. From vertical and directional drilling to extended-reach and high-pressure, high-temperature (HPHT) wells, our capabilities cover the full spectrum of drilling challenges in today’s dynamic energy landscape
+
+            </p>
+          </div>
+
+          <div className="services-grid">
+            {/* Service Cards */}
+            <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
+              {services2.map((service, index) => (
+                <div
+                  key={index}
+                  className={`service-card ${activeService === index ? 'active' : ''}`}
+                  onClick={() => setActiveService(index)}
+                >
+                  <div className="service-card-header">
+                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                      {service.icon}
+                    </div>
+                    <h3 className="service-title">{service.title}</h3>
+                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                  </div>
+                  <p className="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Service Details */}
+            <div id="service-details" className={`service-details ${isVisible['service-details'] ? 'visible' : ''}`}>
+              <div className="service-details-card">
+                <div className="service-details-header">
+                  <div className="service-details-icon">
+                    {services[activeService].icon}
+                  </div>
+                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                </div>
+                
+                <p className="service-details-description">
+                  {services[activeService].description}
+                </p>
+
+                <div className="service-features">
+                  <h4 className="features-title">Key Features:</h4>
+                  {services[activeService].features.map((feature, index) => (
+                    <div key={index} className="feature-item">
+                      <CheckCircle className="feature-icon" />
+                      <span className="feature-text">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button className="service-details-btn">
+                  Learn More
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section">
+        <div className="services-container">
+          <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
+            <h2 className="section-title">
+              Construction Services
+            </h2>
+            <p className="section-description">
+           At Breakpoint Energy Services Limited we deliver world-class construction solutions that drive efficiency, safety, and excellence across every phase of oil and gas infrastructure development. From greenfield projects to brownfield upgrades, we bring your vision to life with unmatched precision and reliability.
+With a seasoned multidisciplinary team and deep regional expertise, our construction services extend across upstream, midstream, and downstream operations — covering facility development, pipeline construction, civil works, steel fabrication, and structural upgrades.
+
+            </p>
+          </div>
+
+          <div className="services-grid">
+            {/* Service Cards */}
+            <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
+              {services3.map((service, index) => (
+                <div
+                  key={index}
+                  className={`service-card ${activeService === index ? 'active' : ''}`}
+                  onClick={() => setActiveService(index)}
+                >
+                  <div className="service-card-header">
+                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                      {service.icon}
+                    </div>
+                    <h3 className="service-title">{service.title}</h3>
+                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                  </div>
+                  <p className="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Service Details */}
+            <div id="service-details" className={`service-details ${isVisible['service-details'] ? 'visible' : ''}`}>
+              <div className="service-details-card">
+                <div className="service-details-header">
+                  <div className="service-details-icon">
+                    {services[activeService].icon}
+                  </div>
+                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                </div>
+                
+                <p className="service-details-description">
+                  {services[activeService].description}
+                </p>
+
+                <div className="service-features">
+                  <h4 className="features-title">Key Features:</h4>
+                  {services[activeService].features.map((feature, index) => (
+                    <div key={index} className="feature-item">
+                      <CheckCircle className="feature-icon" />
+                      <span className="feature-text">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <button className="service-details-btn">
+                  Learn More
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Services Section */}
+      <section className="services-section">
+        <div className="services-container">
+          <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
+            <h2 className="section-title">
+              World-Class Procurement Services
+            </h2>
+            <p className="section-description">
+We leverage deep global partnerships and a vast network of Original Equipment Manufacturers (OEMs), certified vendors, and international suppliers to source and deliver premium materials and equipment. From routine consumables to high-value project-critical assets, our procurement capabilities are tailored to meet project timelines and technical specifications with precision
+            </p>
+          </div>
+
+          <div className="services-grid">
+            {/* Service Cards */}
+            <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
+              {services1.map((service, index) => (
                 <div
                   key={index}
                   className={`service-card ${activeService === index ? 'active' : ''}`}
@@ -339,14 +578,19 @@ const ProductsAndServices = () => {
               Ready to Transform Your Business?
             </h2>
             <p className="cta-description">
-              Join thousands of companies worldwide who trust our solutions to drive their digital transformation journey.
-            </p>
+           At Breakpoint Energy Services Limited, procurement is not just about sourcing materials—it’s about delivering certainty. Our commitment to operational excellence, transparency, and customer satisfaction positions us as the supplier of choice for forward-thinking energy companies across Nigeria, West Africa, and beyond.            </p>
             <div className="cta-buttons">
               <button className="btn-primarys">
-                Get Started Today
+                
+                <ul>
+                <li><a href="/contact us">Get Started Today</a></li>
+                </ul>
               </button>
               <button className="btn-secondary">
-                Schedule Demo
+               
+                <ul>
+                <li><a href="/contact us">Contact us</a></li>
+                </ul>
               </button>
             </div>
           </div>

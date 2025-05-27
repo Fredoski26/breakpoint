@@ -124,26 +124,26 @@ const Sustainability = () => {
 
   const cards = [
     {
-      title: "Carbon Neutrality by 2030",
-      description: "Leading the industry toward a sustainable energy future through innovative technologies and strategic partnerships.",
+      title: "Intelligent Well Planning",
+      description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity.",
       icon: <Leaf className="w-8 h-8" />,
       gradient: "from-emerald-500 to-teal-600"
     },
     {
-      title: "Clean Energy Innovation",
-      description: "Developing cutting-edge solutions for renewable energy integration and carbon capture technologies.",
+      title: "Advanced Technologies",
+      description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
       icon: <Zap className="w-8 h-8" />,
       gradient: "from-yellow-500 to-orange-600"
     },
     {
-      title: "Water Conservation",
-      description: "Implementing advanced water management systems to protect and preserve our most precious resource.",
+      title: "Safety & Environmental Stewardship",
+      description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
       icon: <Droplets className="w-8 h-8" />,
       gradient: "from-blue-500 to-cyan-600"
     },
     {
-      title: "Circular Economy",
-      description: "Creating sustainable value chains through waste reduction, recycling, and resource optimization.",
+      title: "Real-Time Optimization",
+      description: "Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
       icon: <Wind className="w-8 h-8" />,
       gradient: "from-purple-500 to-pink-600"
     }
@@ -211,8 +211,7 @@ const Sustainability = () => {
                                           {/* <ChevronDown size={16} /> */}
                                       </li>
                                       </Link>
-          
-            
+                                      
                       </ul>
                     </nav>
 
@@ -285,10 +284,15 @@ const Sustainability = () => {
             <span className="text-reveal" style={{ '--delay': '0.2s' }}>Future</span>
           </h1>
           <p className="hero-subtitlee text-reveal" style={{ '--delay': '0.4s' }}>
-            Leading the energy transition through innovation, technology, and sustainable practices
+            All inspectors hold ASNT, PCN, or equivalent certifications.
           </p>
           <a href="#commitment" className="hero-cta text-reveal" style={{ '--delay': '0.6s' }}>
-            <span>Explore Our Journey</span>
+            <span>
+             <ul>
+                <li><a href="/products">Explore Our Journey</a></li>
+                </ul> 
+            </span>
+            
             <ArrowRight className="w-5 h-5 arrow-bounce" />
           </a>
         </div>
@@ -407,6 +411,7 @@ const Sustainability = () => {
   style={{ width: '100%', height: '100%' }}
 />
                  
+          
               <div className="video-controls">
                 <button 
                   className="control-btn"
@@ -429,7 +434,7 @@ const Sustainability = () => {
               </div>
             </div>
             <div className="video-info">
-              <h3>Ocean Conservation</h3>
+              <h3 className="h3-color">Ocean Conservation</h3>
               <p>Protecting marine ecosystems through advanced monitoring and restoration.</p>
             </div>
           </div>
@@ -486,8 +491,8 @@ const Sustainability = () => {
               <div className="timeline-icon">
                 <Leaf className="w-6 h-6" />
               </div>
-              <h3>Carbon Neutral Operations</h3>
-              <p>Achieving carbon neutrality across all global operations through renewable energy adoption and efficiency improvements.</p>
+              <h3 className="h3-color2">Zero Compromise on Safety</h3>
+              <p>A flawless track record of incident-free execution in hazardous offshore and onshore environments.</p>
               <div className="timeline-progress">
                 <div className="progress-bar">
                   <div className="progress-fill" style={{ '--progress': '85%' }}></div>
@@ -502,8 +507,8 @@ const Sustainability = () => {
               <div className="timeline-icon">
                 <Wind className="w-6 h-6" />
               </div>
-              <h3>Zero Waste Initiative</h3>
-              <p>Implementing circular economy principles to eliminate waste and maximize resource efficiency across all facilities.</p>
+              <h3>Rapid Deployment & Execution</h3>
+              <p>We significantly reduce mobilization time and downtime, maximizing operational continuity and minimizing disruption.</p>
               <div className="timeline-metrics">
                 <div className="metric">
                   <span className="metric-value">95%</span>
@@ -522,33 +527,52 @@ const Sustainability = () => {
               <div className="timeline-icon">
                 <Zap className="w-6 h-6" />
               </div>
-              <h3>Clean Tech Innovation Hub</h3>
-              <p>Launching dedicated research centers focused on breakthrough clean technologies and sustainable energy solutions.</p>
-              <div className="innovation-showcase">
+              <h3>Multidisciplinary Workforce </h3>
+              <p>Our rope access professionals double as certified NDT technicians, mechanical inspectors, fabricators, electricians, and more—delivering complete solutions from height.</p>
+              {/* <div className="innovation-showcase">
                 <div className="tech-badge">AI-Powered</div>
                 <div className="tech-badge">Carbon Capture</div>
                 <div className="tech-badge">Green Hydrogen</div>
-              </div>
+              </div> */}
             </div>
             <div className="timeline-date glowing-date">2026</div>
           </div>
+
+
           <div className={`timeline-item ${isVisible.timeline ? 'slide-in-right' : ''}`} style={{ '--delay': '0.6s' }}>
             <div className="timeline-content">
               <div className="timeline-icon">
                 <Globe className="w-6 h-6" />
               </div>
-              <h3>Sustainability Commitment</h3>
+              <h3>OCTG and Structural Component Inspections</h3>
               <p>Established comprehensive ESG framework and committed to science-based targets for emissions reduction.</p>
               <div className="achievement-badges">
-                <div className="badge">ESG Leader</div>
-                <div className="badge">Science-Based Targets</div>
-                <div className="badge">UN Global Compact</div>
+                <div className="badge">Riser and Conductor Pipe Inspection</div>
+                <div className="badge">Casing and Tubing Integrity Assessments</div>
+                <div className="badge">Crown Block to Bitline Inspections</div>
               </div>
             </div>
             <div className="timeline-date glowing-date active">2024</div>
           </div>
+
+
+          <div className={`timeline-item ${isVisible.timeline ? 'slide-in-left' : ''}`} style={{ '--delay': '0.4s' }}>
+            <div className="timeline-content">
+              <div className="timeline-icon">
+                <Zap className="w-6 h-6" />
+              </div>
+              <h3>OCTG and Structural Component Inspections </h3>
+              <p>API / DS-1 / NS-2 Standards</p>
+              <div className="innovation-showcase">
+                <div className="tech-badge">OCTG & Drill Pipe Inspection </div>
+                <div className="tech-badge">Bottom Hole Assembly Inspection </div>
+              </div>
+            </div>
+            <div className="timeline-date glowing-date">2026</div>
+          </div>
         </div>
       </section>
+       
 
       {/* Enhanced CTA Section */}
       <section className="cta-section">
@@ -566,13 +590,22 @@ const Sustainability = () => {
             <a href="#" className="btn-primarye magnetic-button">
               <div className="button-content">
                 <Play className="w-5 h-5" />
-                <span>Get Involved</span>
+                <span>
+                 <ul>
+                <li><a href="/contact us"> Get Involved</a></li>
+                </ul> 
+               </span>
               </div>
               <div className="button-bg"></div>
             </a>
             <a href="#" className="btn-secondary magnetic-button">
               <div className="button-content">
-                <span>Learn More</span>
+                <span>
+                 <ul>
+                <li><a href="/product"> Learn More</a></li>
+                </ul> 
+               </span>
+                
                 <ArrowRight className="w-5 h-5" />
               </div>
               <div className="button-bg"></div>

@@ -384,7 +384,7 @@ export default function AboutUs() {
           </h1>
           
           <p className="hero-subtitle">
-            Leading Innovation in Nigeria's Energy Landscape
+            At Breakpoint Energy Services Limited, our Procurement and Supply Chain Services are designed to be agile, responsive, and strategically aligned with our clients’ operational needs. We provide intelligent sourcing solutions that deliver value beyond cost savings—ensuring quality, reliability, and performance across the energy and industrial spectrum
           </p>
           
           {/* <button className="hero-cta-button">
@@ -454,47 +454,29 @@ export default function AboutUs() {
             <div className="operations-grid">
               {[
                 {
-                  title: "Offshore Operations",
-                  description: "Advanced offshore drilling and production solutions.",
+                  title: "Intelligent Well Planning ",
+                  description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity.",
                   image: logoImage1
                 },
                 {
-                  title: "Engineering Excellence",
-                  description: "Cutting-edge design and technical solutions.",
+                  title: "Advanced Technologies",
+                  description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
                   image: logoImage3
                 },
                 {
-                  title: "Project Management",
-                  description: "Delivering complex projects on time and within budget.",
+                  title: "Safety & Environmental Stewardship",
+                  description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
                   image: logoImage4
                 },
                 {
-                  title: "Project Management",
-                  description: "Delivering complex projects on time and within budget.",
+                  title: "Real-Time Optimization",
+                  description: "Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
                   image: logoImage1
                 },
-                {
-                  title: "Project Management",
-                  description: "Delivering complex projects on time and within budget.",
-                  image: logoImage4
-                },
-                {
-                  title: "Project Management",
-                  description: "Delivering complex projects on time and within budget.",
-                  image: logoImage2
-                },
-                {
-                  title: "Project Management",
-                  description: "Delivering complex projects on time and within budget.",
-                  image: logoImage3
-                },
-                {
-                  title: "Our Expert Team",
-                  description: "Highly skilled professionals driving our success.",
-                  image: logoImage2
-                }
+                
               ].map((item, index) => (
                 <div key={index} className="operation-card">
+    
                   <img 
                     src={item.image}
                     alt={item.title} 
@@ -517,26 +499,26 @@ export default function AboutUs() {
             <div className="space-y-16">
               {[
                 {
-                  title: "Excellence",
-                  description: "We consistently strive for the highest standards in all our endeavors, delivering superior results that exceed expectations. Our commitment to excellence drives us to continuously improve our processes, technologies, and service delivery to ensure optimal outcomes for our clients and stakeholders.",
+                  title: "Intelligent Well Planning",
+                  description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
                   image: {logoImage3},
                   reverse: false
                 },
                 {
-                  title: "Integrity",
-                  description: "We conduct our business with honesty, transparency, and ethical practices that build trust with our stakeholders. Integrity is at the heart of everything we do, from our client relationships to our internal operations, ensuring accountability and reliability in all aspects of our business.",
+                  title: "Advanced Technologies",
+                  description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
                   image: {logoImage1},
                   reverse: true
                 },
                 {
-                  title: "Innovation",
-                  description: "We embrace creative thinking and cutting-edge technology to develop pioneering solutions for complex challenges. Our innovative approach enables us to adapt to evolving industry demands, optimize operational efficiency, and create sustainable value for our clients in a rapidly changing energy landscape.",
+                  title: "Safety & Environmental Stewardship",
+                  description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
                   image: {logoImage2},
                   reverse: false
                 },
                 {
-                  title: "Local Empowerment",
-                  description: "We prioritize developing local talent and resources to strengthen Nigeria's energy industry capabilities. Through knowledge transfer, capacity building, and community engagement, we contribute to economic growth and sustainability while fostering a sense of ownership and pride among the communities where we operate.",
+                  title: "Real-Time Optimization",
+                  description: "sing advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
                   image: {logoImage4},
                   reverse: true
                 }

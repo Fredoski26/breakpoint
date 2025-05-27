@@ -8,6 +8,7 @@
   --secondary-green: #007e33;
   --accent-blue: #0099cc;
   --text-primary: #1a1a1a;
+   --dark-blue2: #1A0262;
   --text-secondary: #666;
   --background-light: #fafafa;
   --background-dark: #0a0a0a;
@@ -128,6 +129,10 @@ body {
   width: 100%;
   overflow-x: hidden;
   position: relative;
+}
+
+.h3-color2{
+  color: darkblue;
 }
 
 /* Hero Section */
@@ -843,7 +848,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--text-primary);
+  color: var(--dark-blue2);
 }
 
 .timeline-content p {

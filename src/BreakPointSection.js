@@ -7,12 +7,12 @@ const BreakPointSection = () => {
       <div className="breakpoint-container">
         <div className="breakpoint-content-left">
           <p className="breakpoint-focus-label">Focus</p>
-          <h1 className="breakpoint-main-heading">
+          <h1 className="breakpoint-main-heading">	At Breakpoint Energy Services Limited, we deliver world-class Inspection and Non-Destructive Testing (NDT) services that are engineered to exceed industry standards and client expectations.           </h1>
+          {/* <h1 className="breakpoint-main-heading">
             Accelerating decarbonization and innovating across the entire energy landscape with leading science, engineering and digital expertise
-          </h1>
+          </h1> */}
           <p className="breakpoint-description">
-            We create and deploy the technology and systems needed to simultaneously reduce emissions while meeting the world's growing energy demands, ensuring progress for people and the planet, on the journey to net zero and beyond.
-          </p>
+           Our inspection capabilities are a critical part of our integrated asset integrity solutions, designed to maximize uptime, enhance safety, and ensure full compliance across oilfield operations, both onshore and offshore.          </p>
         </div>
         <div className="breakpoint-content-right">
           <a href="#" className="breakpoint-explore-button">

@@ -117,7 +117,7 @@ const ContactUs = () => {
     {
       icon: Phone,
       title: 'Phone Support',
-      details: '+1 (800) 123-4567',
+      details: '+234 809 730 4756',
       description: 'Available 24/7 for urgent inquiries'
     },
     {
@@ -134,8 +134,9 @@ const ContactUs = () => {
     },
     {
       icon: MapPin,
-      title: 'Global Presence',
-      details: '50+ Countries',
+      title: 'Location',
+      //title: 'Global Presence',
+      details: '10 Ekpeli Drive, Off Peter Odili Road, PH',
       description: 'Local support worldwide'
     }
   ];
@@ -674,6 +675,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      
 
        {/* Footer */}
       <footer className="footer">

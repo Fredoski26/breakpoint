@@ -17,23 +17,23 @@ const SlbSolutions = () => {
   // Solutions data with titles and descriptions
   const solutionsData = [
     {
-      title: "Redefining Production and Recovery",
-      description: "Maximize production efficiency and resource recovery with our innovative technologies designed to optimize output while reducing environmental impact.",
+      title: "Intelligent Well Planning ",
+      description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
       image: logoImage1
     },
     {
-      title: "Data and AI Platform",
-      description: "Harness the power of advanced analytics and artificial intelligence to transform raw data into actionable insights for smarter decision-making.",
+      title: "Advanced Technologies",
+      description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
       image: logoImage2
     },
     {
-      title: "Accelerated Time to Market",
-      description: "Speed up your project timeline with our streamlined processes and technologies designed to reduce development cycles and deployment time.",
+      title: "Safety & Environmental Stewardship",
+      description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
       image: logoImage3
     },
     {
-      title: "Performance Assurance",
-      description: "Ensure consistent operational excellence with our comprehensive monitoring and optimization solutions for guaranteed performance outcomes.",
+      title: "Real-Time Optimization",
+      description: "Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
       image: logoImage4
     },
     {
@@ -51,26 +51,7 @@ const SlbSolutions = () => {
       description: "Implement effective carbon reduction strategies with our advanced technologies designed to capture, store, and repurpose carbon emissions.",
       image: logoImage2
     },
-    {
-      title: "Renewable Energy Integration",
-      description: "Seamlessly incorporate renewable energy sources into your operations with our specialized integration technologies and expertise.",
-      image: logoImage3
-    },
-    {
-      title: "Sustainable Operations",
-      description: "Transform your business processes with our holistic approach to sustainability that balances environmental responsibility with operational efficiency.",
-      image: logoImage1
-    },
-    {
-      title: "Sustainable Operations2",
-      description: "Implement next-generation sustainability practices that reduce resource consumption while improving overall business performance and outcomes.",
-      image: logoImage2
-    },
-    {
-      title: "Sustainable Operations3",
-      description: "Advance your sustainability initiatives with our comprehensive solutions designed to minimize environmental footprint across all operations.",
-      image: logoImage3
-    }
+    
   ];
 
   const styles = {
@@ -294,8 +275,7 @@ const SlbSolutions = () => {
                 Solving industry's most pressing challenges
               </h1>
               <p className="SLB-Solutions-description">
-                Ensuring the sustainability, security, and equity of energy access means we must think big. We need global solutions that can be scaled and adopted quickly. BreakPoint's know-how and technology are helping to overcome industry's greatest challenges while transforming energy. See which solutions meet your needs.
-              </p>
+               Our team comprises internationally certified inspectors and multi-discipline NDT professionals with vast field experience, trained to deploy state-of-the-art diagnostic tools and technologies across all inspection regimes. We provide precise, reliable evaluations of equipment integrity and structural soundness by ensuring early detection of potential failures, prolonging asset life, and reducing operational risks              </p>
             </div>
             <div className="SLB-Solutions-header-right">
               <a href="#" className="SLB-Solutions-explore-button">

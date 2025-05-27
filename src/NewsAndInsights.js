@@ -85,11 +85,11 @@ const observer = new IntersectionObserver(
   // Filter tabs
   const filterTabs = [
     { id: 'all', label: 'All' },
-    { id: 'press-releases', label: 'Press releases' },
-    { id: 'articles', label: 'Articles' },
-    { id: 'reports', label: 'Reports' },
-    { id: 'case-studies', label: 'Case studies' },
-    { id: 'feature-stories', label: 'Feature stories' },
+    { id: 'Why Choose Us', label: 'Why Choose Us' },
+    { id: 'What Sets Our Rope Access Apart', label: 'What Sets Our Rope Access Apart' },
+    { id: 'What Sets Us Apart', label: 'What Sets Us Apart' },
+    // { id: 'case-studies', label: 'Case studies' },
+    // { id: 'feature-stories', label: 'Feature stories' },
     { id: 'events', label: 'Events' },
     // { id: 'webcasts', label: 'Webcasts' }
   ];
@@ -97,20 +97,36 @@ const observer = new IntersectionObserver(
   // News items data
   const newsItems = [
     {
-      type: 'Press release',
-      date: 'May 15, 2025',
-      title: 'BreakPoint Announces First-Quarter 2025 Results',
-      description: 'BreakPoint announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
+      type: 'Why Choose Us',
+      date: '',
+      title: 'Certified Expertise',
+      description: 'All inspectors hold ASNT, PCN, or equivalent certifications.',
       imageUrl: logoImage1,
-      tag: 'press-releases'
+      tag: 'Why Choose Us'
     },
-    {
-      type: 'Press release',
-      date: 'May 15, 2025',
-      title: 'BreakPoint Announces First-Quarter 2025 Results',
-      description: 'BreakPoint announced its first-quarter 2025 results, showing strong revenue growth across all divisions and regions.',
-      imageUrl: logoImage2,
-      tag: 'press-releases'
+     {
+      type: 'Why Choose Us',
+      date: '',
+      title: 'Uncompromising Quality',
+      description: 'We adhere strictly to API, ASME, DS-1, and ISO standards.',
+      imageUrl: logoImage1,
+      tag: 'Why Choose Us'
+    },
+     {
+      type: 'Why Choose Us',
+      date: '',
+      title: 'Technology-Driven',
+      description: 'We invest in cutting-edge NDT equipment and digital inspection systems.',
+      imageUrl: logoImage1,
+      tag: 'Why Choose Us'
+    },
+     {
+      type: 'Why Choose Us',
+      date: '',
+      title: 'Safety and Compliance',
+      description: 'Our inspections align with regulatory bodies and OEM requirements.',
+      imageUrl: logoImage1,
+      tag: 'Why Choose Us'
     },
     {
       type: 'Feature story',
@@ -121,12 +137,36 @@ const observer = new IntersectionObserver(
       tag: 'feature-stories'
     },
     {
-      type: 'Article',
-      date: 'May 5, 2025',
-      title: 'The Future of Digital Transformation in Energy',
-      description: 'Exploring how digital solutions are revolutionizing operations across the energy sector.',
+      type: 'What Sets Our Rope Access Apart',
+      date: '',
+      title: 'Zero Compromise on Safety',
+      description: 'A flawless track record of incident-free execution in hazardous offshore and onshore environments',
       imageUrl: logoImage4 ,
-      tag: 'articles'
+      tag: 'What Sets Our Rope Access Apart'
+    },
+    {
+      type: 'What Sets Our Rope Access Apart',
+      date: '',
+      title: 'Rapid Deployment & Execution',
+      description: 'We significantly reduce mobilization time and downtime, maximizing operational continuity and minimizing disruption.',
+      imageUrl: logoImage4 ,
+      tag: 'What Sets Our Rope Access Apart'
+    },
+    {
+      type: 'What Sets Our Rope Access Apart',
+      date: '',
+      title: 'Multidisciplinary Workforce',
+      description: 'Our rope access professionals double as certified NDT technicians, mechanical inspectors, fabricators, electricians, and more—delivering complete solutions from height',
+      imageUrl: logoImage4 ,
+      tag: 'What Sets Our Rope Access Apart'
+    },
+    {
+      type: 'What Sets Our Rope Access Apart',
+      date: '',
+      title: 'Cost-Efficiency',
+      description: 'Reduced labor, equipment, and setup costs offer significant savings compared to traditional access methods',
+      imageUrl: logoImage4 ,
+      tag: 'What Sets Our Rope Access Apart'
     },
     {
       type: 'Case study',
@@ -145,12 +185,36 @@ const observer = new IntersectionObserver(
       tag: 'events'
     },
     {
-      type: 'Report',
-      date: 'April 20, 2025',
-      title: 'Energy Transition Outlook 2025',
-      description: 'BreakPoint\'s comprehensive analysis of the evolving energy landscape and pathways to decarbonization.',
+      type: 'What Sets Us Apart',
+      date: '',
+      title: 'Intelligent Well Planning',
+      description: 'We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity',
       imageUrl: logoImage2,
-      tag: 'reports'
+      tag: 'What Sets Us Apart'
+    },
+     {
+      type: 'What Sets Us Apart',
+      date: '',
+      title: 'Advanced Technologies',
+      description: 'Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).',
+      imageUrl: logoImage2,
+      tag: 'What Sets Us Apart'
+    },
+     {
+      type: 'What Sets Us Apart',
+      date: '',
+      title: 'Safety & Environmental Stewardship',
+      description: 'With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.',
+      imageUrl: logoImage2,
+      tag: 'What Sets Us Apart'
+    },
+     {
+      type: 'What Sets Us Apart',
+      date: '',
+      title: 'Real-Time Optimization: ',
+      description: 'Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.',
+      imageUrl: logoImage2,
+      tag: 'What Sets Us Apart'
     }
   ];
 
@@ -233,8 +297,6 @@ const observer = new IntersectionObserver(
                                           {/* <ChevronDown size={16} /> */}
                                       </li>
                                       </Link>
-          
-            
                       </ul>
                     </nav>
 
@@ -278,14 +340,13 @@ const observer = new IntersectionObserver(
           </h1>
           
           <p className="hero-subtitle">
-            Explore BreakPoint news and the thoughts and achievements of our folks 
-            around the globe.
+            At Breakpoint Energy Services Limited, we redefine high-access operations through cutting-edge Rope Access Inspection services, engineered to deliver unmatched safety, efficiency, and cost-effectiveness in challenging environments. Our rope access program is built upon the globally recognized IRATA (Industrial Rope Access Trade Association) standards, ensuring the highest level of professionalism and compliance in every project we execute.
           </p>
           
-          <button className="hero-cta-button">
+          {/* <button className="hero-cta-button">
             <span>Register to subscribe</span>
             <ArrowRight className="hero-arrow-icon" size={20} />
-          </button>
+          </button> */}
         </div>
         
         {/* Right Image */}
@@ -312,9 +373,9 @@ const observer = new IntersectionObserver(
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">News and Insights</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">BreakPoint</h1>
               <p className="text-lg text-gray-700">
-                Browse our latest news releases, executive presentations, and featured updates.
+                Backed by highly skilled, IRATA-certified technicians, our Rope Access team is not only proficient in vertical access but also cross-trained across multiple disciplines. This enables us to carry out complex inspection, maintenance, and integrity management tasks safely and swiftly—without the need for disruptive, time-consuming scaffolding or heavy lifting equipment.
               </p>
             </div>
             <div className="md:w-1/2">

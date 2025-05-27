@@ -36,26 +36,26 @@ const TabSection = () => {
   const tabs = [
     {
       id: 0,
-      title: "Decarbonizing Industry",
-      description: "Working together to abate emissions.",
+      title: "Certified Expertise",
+      description: "All inspectors hold ASNT, PCN, or equivalent certifications.",
       image: logoImage1
     },
     {
       id: 1,
-      title: "Innovating in Oil and Gas",
-      description: "Advancing technologies for sustainable resource development.",
+      title: "Uncompromising Quality",
+      description: "We adhere strictly to API, ASME, DS-1, and ISO standards.",
       image: logoImage2
     },
     {
       id: 2,
-      title: "Scaling New Energy Systems",
-      description: "Building solutions for the future of energy.",
+      title: "Technology-Driven",
+      description: "We invest in cutting-edge NDT equipment and digital inspection systems.",
       image: logoImag3
     },
     {
       id: 3,
-      title: "Delivering Digital at Scale",
-      description: "Transforming operations through cutting-edge digital solutions.",
+      title: "Safety and Compliance",
+      description: "Our inspections align with regulatory bodies and OEM requirements.",
       image: logoImag4
     }
   ];
