@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, User, Building2, Menu, X, } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './App.css';
-import logoImage from './images/logo2.jpg';
+import logoImage from './images/logo2.png';
 
 
 

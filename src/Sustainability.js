@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 import { ChevronDown, Leaf, Zap, Droplets, Wind, Globe, ArrowRight, Play, Pause, Volume2, VolumeX, Maximize, RotateCcw } from 'lucide-react';
 import './sustainable.css';
-import logoImage from './images/logo2.jpg';
+import logoImage from './images/logo2.png';
 import { Link } from 'react-router-dom';
 
 const Sustainability = () => {

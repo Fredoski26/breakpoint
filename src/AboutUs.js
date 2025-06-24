@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import { X, Menu } from 'lucide-react';
-import logoImage from './images/logo2.jpg';
+import logoImage from './images/logo2.png';
 import logoImage1 from './images/image1.jpg';
 import logoImage2 from './images/image2.jpg';
 import logoImage3 from './images/image3.jpg';
