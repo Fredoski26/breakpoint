@@ -84,10 +84,10 @@ const TabSection = () => {
                   <p className={`tab-description ${loading ? 'loading' : ''}`}>{tab.description}</p>
                 </div>
               </div>
-              <div className={`tab-explore ${loading ? 'loading' : ''}`}>
+              {/* <div className={`tab-explore ${loading ? 'loading' : ''}`}>
                 <span>Explore</span>
                 <ArrowRight size={18} />
-              </div>
+              </div> */}
             </div>
             <div className="tab-content-right">
               <img 

@@ -278,10 +278,10 @@ const SlbSolutions = () => {
                Our team comprises internationally certified inspectors and multi-discipline NDT professionals with vast field experience, trained to deploy state-of-the-art diagnostic tools and technologies across all inspection regimes. We provide precise, reliable evaluations of equipment integrity and structural soundness by ensuring early detection of potential failures, prolonging asset life, and reducing operational risks              </p>
             </div>
             <div className="SLB-Solutions-header-right">
-              <a href="#" className="SLB-Solutions-explore-button">
+              {/* <a href="#" className="SLB-Solutions-explore-button">
                 Explore our solutions
                 <span className="SLB-Solutions-arrow-icon">→</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -318,7 +318,7 @@ const SlbSolutions = () => {
                 <div style={styles.cardDescription}>
                   <p>{solution.description}</p>
                 </div>
-                <a 
+                {/* <a 
                   href="#" 
                   style={styles.cardLink}
                   onMouseEnter={(e) => {
@@ -330,7 +330,7 @@ const SlbSolutions = () => {
                 >
                   Explore
                   <span>→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

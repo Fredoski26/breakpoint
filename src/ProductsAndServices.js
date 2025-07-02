@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 
 const ProductsAndServices = () => {
   const [activeService, setActiveService] = useState(0);
+  const [activeService1, setActiveService1] = useState(0);
+  const [activeServiceConst, setActiveServiceConst] = useState(0);
   const [isVisible, setIsVisible] = useState({});
    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
@@ -68,16 +70,72 @@ const ProductsAndServices = () => {
           return () => window.removeEventListener('scroll', handleScroll);
         }, []);
 
-  const services = [
-    {
-      title: "Our Rope Access Service Capabilities ",
-      description: "Our Rope Access Service Capabilities Include",
+     const serviceName =[
+
+       {
+      title: "Services",
+      description: "1. Inspection and Non-Destructive Testing (NDT) ",
       icon: <Globe className="w-8 h-8" />,
-      features: ["Structural & Component Inspections", "Non-Destructive Testing (NDT)", "Lifting Gear and Pipework Inspection", "Blasting & Coating Application", "Welding & Hot Works", "Electrical & Instrumentation Works", "Confined Space Entry Support", "Maintenance and Emergency Repairs "]
+    },
+
+    {
+      title: "Fred2 ",
+      description: "2.	Rope Access Inspection Services",
+      icon: <Globe className="w-8 h-8" />,
+    },
+
+    {
+      title: "Fred3 ",
+      description: "3.	Drilling Services",
+      icon: <Globe className="w-8 h-8" />,
+    },
+
+     {
+      title: "Fred3 ",
+      description: "4 Construction Services",
+      icon: <Globe className="w-8 h-8" />,
+    },
+
+     {
+      title: "Fred3 ",
+      description: "5.	Strategic Procurement & Supply Chain Excellence",
+      icon: <Globe className="w-8 h-8" />,
+    },
+
+
+
+     ]
+
+
+      const serviceInspection = [
+    {
+      title: "Inspection and Non-Destructive Testing (NDT) ",
+      description: "",
+      icon: <Globe className="w-8 h-8" />,
+      features: ["Magnetic Particle Inspection (MPI)", "Dye Penetrant Inspection (DPI)", "Ultrasonic Testing (UT)", "Eddy Current Testing (ECT)", "Radiographic Testing (RT)", "Boroscopic Inspection", "Hardness Testing", "Time of Flight Diffraction (TOFD)","Alternating Current Field Measurement (ACFM)",]
     },
     {
-      title: "Rope Access Tradesmen ",
-      description: "Our Rope Access Tradesmen Include.",
+      title: "OCTG and Structural Component Inspections",
+      description: "",
+      icon: <Zap className="w-8 h-8" />,
+      features: ["OCTG & Drill Pipe Inspection – API / DS-1 / NS-2 Standards","Bottom Hole Assembly Inspection – Full BHA analysis and certification","Riser and Conductor Pipe Inspection","Casing and Tubing Integrity Assessments","Crown Block to Bitline Inspections"]
+  
+    },
+
+  
+   
+  ];
+
+  const services = [
+    {
+      title: "Rope Access Service Capabilities include:  ",
+      description: "",
+      icon: <Globe className="w-8 h-8" />,
+      features: ["Structural & Component Inspections", "Non-Destructive Testing (NDT)", "Lifting Gear and Pipework Inspection", "Blasting & Coating Application","Rigging and Installation", "Welding & Hot Works", "Electrical & Instrumentation Works", "Confined Space Entry Support", "Maintenance and Emergency Repairs "]
+    },
+    {
+      title: "Rope Access Tradesmen Include ",
+      description: "",
       icon: <Zap className="w-8 h-8" />,
       features: ["IRATA-Certified NDT Technicians", "Welders & Fabricators", "Blasters & Painters", "Pipe Fitters & Riggers", "Mechanical & Electrical Engineers","Insulators & Plumbers","General Maintenance Specialists"]
     },
@@ -89,8 +147,15 @@ const ProductsAndServices = () => {
     {
       title: "World-Class Procurement Services",
       description: "We leverage deep global partnerships and a vast network of Original Equipment Manufacturers (OEMs), certified vendors, and international suppliers to source and deliver premium materials and equipment. From routine consumables to high-value project-critical assets, our procurement capabilities are tailored to meet project timelines and technical specifications with precision",
-      icon: <Settings className="w-8 h-8" />,
+      icon: <Globe className="w-8 h-8" />,
       features: ["Oilfield and drilling equipment", "Mechanical, electrical & instrumentation components", "Process automation systems and spares", "Personal Protective Equipment (PPE) and safety gear", "Chemicals, lubricants, and specialized industrial materials" ]
+    },
+
+    {
+      title: "End-to-End Supply Chain Management",
+      description: "We manage the entire procurement lifecycle—from vendor selection and contract negotiation to expediting, shipping, customs clearance, warehousing, and last-mile delivery. Our integrated IT systems and dedicated logistics teams enable real-time tracking, performance monitoring, and risk mitigation at every stage.",
+      icon: <Zap className="w-8 h-8" />,
+      features: ["Dedicated global sourcing & logistics team", "In-house freight forwarding & clearing agents", "Warehousing, stock holding & inventory control systems", "Just-in-time (JIT) delivery scheduling", "Compliance with local and international procurement regulations" ]
     },
     
   ];
@@ -98,9 +163,9 @@ const ProductsAndServices = () => {
   const services2 = [
   
     {
-      title: "Our Drilling Service Capabilities",
-      description: "Our Drilling Service Capabilities Include.",
-      icon: <Settings className="w-8 h-8" />,
+      title: "Drilling Service Capabilities Include",
+      description: "",
+      icon: <Globe className="w-8 h-8" />,
       features: ["Well Planning and Engineering", "Onshore and Offshore Drilling Operations", "Directional & Horizontal Drilling", "HPHT & Deep Well Drilling", "Mud Engineering & Solids Control", "Real-Time Drilling Monitoring & Remote Support", "Wellbore Cleanout and Completion Preparation"]
     },
     
@@ -109,14 +174,14 @@ const ProductsAndServices = () => {
   const services3 = [
    
     {
-      title: "Our Construction Capabilities",
-      description: "Our Construction Capabilities Include.",
+      title: "Construction Capabilities Include",
+      description: "",
       icon: <Layers className="w-8 h-8" />,
       features: ["Oil & Gas Facility Construction (Flow Stations, Manifolds, Compressor Stations)", "Pipeline Construction & Hydrotesting", "Civil Works (Foundations, Roadways, Drainage, Structural Concrete)", "Steel Structure Fabrication & Erection (Skids, Racks, Storage Tanks, Pressure Vessels)","Mechanical, Electrical & Instrumentation Installations","Modular and Pre-Engineered Building Systems","Commissioning and Start-Up Support","Erosion Control & Soil Stabilization Projects"]
     },
     {
       title: "Project Delivery Models",
-      description: "Project Delivery Models.",
+      description: "",
       icon: <Layers className="w-8 h-8" />,
       features: ["EPC (Engineering, Procurement & Construction)", "Design-Build & Turnkey Solutions", "Public-Private Partnerships","Construction Management-at-Risk (CMAR)"]
     }
@@ -188,12 +253,12 @@ const ProductsAndServices = () => {
                         </li>
                         </Link>
           
-                         <Link to="/" className="nav-item has-dropdown">
+                         {/* <Link to="/" className="nav-item has-dropdown">
                         <li className="nav-link">
                             <span>Solutions</span>
-                            {/* <ChevronDown size={16} /> */}
+                            
                         </li>
-                        </Link>
+                        </Link> */}
           
                         
           
@@ -244,15 +309,60 @@ const ProductsAndServices = () => {
       </div>
 
 
+      
+
+
       {/* Hero Section */}
-      <section className="hero-sections">
+      <section className="stats-sections flex flex-col items-center justify-center min-h-screen">
         <div className="floating-orbs">
           <div className="orb orb-blue"></div>
           <div className="orb orb-purple"></div>
           <div className="orb orb-pink"></div>
         </div>
         
-        <div id="hero" className={`hero-conten ${isVisible.hero ? 'visibles' : ''}`}>
+        <div className="services-grid">
+            {/* Service Cards */}
+          
+           
+
+ <div id="service-details" className={`service-details ${isVisible['service-details'] ? 'visible' : ''}`}>
+              <div className="service-details-second-card">
+                <div className="service-details-header">
+                  <div className="service-details-icon">
+                    {services1[activeService1].icon}
+                  </div>
+                  <h3 className="service-details-title">Our Services:</h3>
+                </div>
+                
+                <p className="service-details-description">
+                  
+                </p>
+              </div>
+            </div>
+
+             <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
+              {serviceName.map((service, index) => (
+                <div
+                  key={index}
+                  className={`service-card ${activeService1 === index ? 'active' : ''}`}
+                  // onClick={() => setActiveService(index)}
+                >
+                  <div className="service-card-header">
+                    <div className={`service-icon ${activeService1 === index ? 'active' : ''}`}>
+                      {/* {service.icon} */}
+                    </div>
+                    
+                    <h3 className="service-title">{service.description}</h3>
+                    {/* <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} /> */}
+                  </div>
+                  
+                </div>
+              ))}
+            </div>
+            
+          </div>
+        
+        {/* <div id="hero" className={`hero-conten ${isVisible.hero ? 'visibles' : ''}`}>
           <div className="hero-cards">
             <h1 className="hero-titles">
               Future-Ready Solutions
@@ -276,7 +386,7 @@ const ProductsAndServices = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Stats Section */}
@@ -295,16 +405,15 @@ const ProductsAndServices = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+       {/* Services Section */}
       <section className="services-section">
         <div className="services-container">
           <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
             <h2 className="section-title">
-              Rope Access Inspection Services
+              Inspection and Non-Destructive Testing (NDT) 
             </h2>
             <p className="section-description">
-At Breakpoint Energy Services Limited, we redefine high-access operations through cutting-edge Rope Access Inspection services, engineered to deliver unmatched safety, efficiency, and cost-effectiveness in challenging environments. Our rope access program is built upon the globally recognized IRATA (Industrial Rope Access Trade Association) standards, ensuring the highest level of professionalism and compliance in every project we execute.
-Backed by highly skilled, IRATA-certified technicians, our Rope Access team is not only proficient in vertical access but also cross-trained across multiple disciplines. This enables us to carry out complex inspection, maintenance, and integrity management tasks safely and swiftly—without the need for disruptive, time-consuming scaffolding or heavy lifting equipment.
+             Our inspection capabilities are a critical part of our integrated asset integrity solutions, designed to maximize uptime, enhance safety, and ensure full compliance across oilfield operations, both onshore and offshore
 
             </p>
           </div>
@@ -312,18 +421,18 @@ Backed by highly skilled, IRATA-certified technicians, our Rope Access team is n
           <div className="services-grid">
             {/* Service Cards */}
             <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
-              {services.map((service, index) => (
+              {serviceInspection.map((service, index) => (
                 <div
                   key={index}
-                  className={`service-card ${activeService === index ? 'active' : ''}`}
-                  onClick={() => setActiveService(index)}
+                  className={`service-card ${activeServiceConst === index ? 'active' : ''}`}
+                  onClick={() => setActiveServiceConst(index)}
                 >
                   <div className="service-card-header">
-                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                    <div className={`service-icon ${activeServiceConst === index ? 'active' : ''}`}>
                       {service.icon}
                     </div>
                     <h3 className="service-title">{service.title}</h3>
-                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                    <ChevronRight className={`service-arrow ${activeServiceConst === index ? 'active' : ''}`} />
                   </div>
                   <p className="service-description">{service.description}</p>
                 </div>
@@ -335,18 +444,18 @@ Backed by highly skilled, IRATA-certified technicians, our Rope Access team is n
               <div className="service-details-card">
                 <div className="service-details-header">
                   <div className="service-details-icon">
-                    {services[activeService].icon}
+                    {serviceInspection[activeServiceConst].icon}
                   </div>
-                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                  <h3 className="service-details-title">{serviceInspection[activeServiceConst].title}</h3>
                 </div>
                 
                 <p className="service-details-description">
-                  {services[activeService].description}
+                  {serviceInspection[activeServiceConst].description}
                 </p>
 
                 <div className="service-features">
-                  <h4 className="features-title">Key Features:</h4>
-                  {services[activeService].features.map((feature, index) => (
+                  <h4 className="features-title">Services:</h4>
+                  {serviceInspection[activeServiceConst].features.map((feature, index) => (
                     <div key={index} className="feature-item">
                       <CheckCircle className="feature-icon" />
                       <span className="feature-text">{feature}</span>
@@ -354,10 +463,72 @@ Backed by highly skilled, IRATA-certified technicians, our Rope Access team is n
                   ))}
                 </div>
 
-                <button className="service-details-btn">
-                  Learn More
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section">
+        <div className="services-container">
+          <div id="services-header" className={`services-header ${isVisible['services-header'] ? 'visible' : ''}`}>
+            <h2 className="section-title">
+              Rope Access Inspection Services
+            </h2>
+            <p className="section-description">
+             Our rope access program is built upon the globally recognized IRATA (Industrial Rope Access Trade Association) standards, ensuring the highest level of professionalism and compliance in every project we execute.
+
+            </p>
+          </div>
+
+          <div className="services-grid">
+            {/* Service Cards */}
+            <div id="service-cards" className={`service-cards ${isVisible['service-cards'] ? 'visible' : ''}`}>
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className={`service-card ${activeServiceConst === index ? 'active' : ''}`}
+                  onClick={() => setActiveServiceConst(index)}
+                >
+                  <div className="service-card-header">
+                    <div className={`service-icon ${activeServiceConst === index ? 'active' : ''}`}>
+                      {service.icon}
+                    </div>
+                    <h3 className="service-title">{service.title}</h3>
+                    <ChevronRight className={`service-arrow ${activeServiceConst === index ? 'active' : ''}`} />
+                  </div>
+                  <p className="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Service Details */}
+            <div id="service-details" className={`service-details ${isVisible['service-details'] ? 'visible' : ''}`}>
+              <div className="service-details-card">
+                <div className="service-details-header">
+                  <div className="service-details-icon">
+                    {services[activeServiceConst].icon}
+                  </div>
+                  <h3 className="service-details-title">{services[activeServiceConst].title}</h3>
+                </div>
+                
+                <p className="service-details-description">
+                  {services[activeServiceConst].description}
+                </p>
+
+                <div className="service-features">
+                  <h4 className="features-title">Services:</h4>
+                  {services[activeServiceConst].features.map((feature, index) => (
+                    <div key={index} className="feature-item">
+                      <CheckCircle className="feature-icon" />
+                      <span className="feature-text">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                
               </div>
             </div>
           </div>
@@ -372,8 +543,7 @@ Backed by highly skilled, IRATA-certified technicians, our Rope Access team is n
               Drilling Services
             </h2>
             <p className="section-description">
-              At Breakpoint Energy Services Limited, we offer next-generation Drilling Services that merge precision engineering, technological innovation, and operational excellence to unlock energy resources safely, efficiently, and sustainably.
-Our highly specialized drilling engineering team is adept at designing and executing complex well construction projects, both onshore and offshore. From vertical and directional drilling to extended-reach and high-pressure, high-temperature (HPHT) wells, our capabilities cover the full spectrum of drilling challenges in today’s dynamic energy landscape
+            Our highly specialized drilling engineering team is adept at designing and executing complex well construction projects, both onshore and offshore. From vertical and directional drilling to extended-reach and high-pressure, high-temperature (HPHT) wells, our capabilities cover the full spectrum of drilling challenges in today’s dynamic energy landscape.
 
             </p>
           </div>
@@ -392,7 +562,7 @@ Our highly specialized drilling engineering team is adept at designing and execu
                       {service.icon}
                     </div>
                     <h3 className="service-title">{service.title}</h3>
-                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                    {/* <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} /> */}
                   </div>
                   <p className="service-description">{service.description}</p>
                 </div>
@@ -404,18 +574,18 @@ Our highly specialized drilling engineering team is adept at designing and execu
               <div className="service-details-card">
                 <div className="service-details-header">
                   <div className="service-details-icon">
-                    {services[activeService].icon}
+                    {services2[activeService].icon}
                   </div>
-                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                  <h3 className="service-details-title">{services2[activeService].title}</h3>
                 </div>
                 
                 <p className="service-details-description">
-                  {services[activeService].description}
+                  {services2[activeService].description}
                 </p>
 
                 <div className="service-features">
-                  <h4 className="features-title">Key Features:</h4>
-                  {services[activeService].features.map((feature, index) => (
+                  <h4 className="features-title">Services:</h4>
+                  {services2[activeService].features.map((feature, index) => (
                     <div key={index} className="feature-item">
                       <CheckCircle className="feature-icon" />
                       <span className="feature-text">{feature}</span>
@@ -423,10 +593,7 @@ Our highly specialized drilling engineering team is adept at designing and execu
                   ))}
                 </div>
 
-                <button className="service-details-btn">
-                  Learn More
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                
               </div>
             </div>
           </div>
@@ -453,15 +620,15 @@ With a seasoned multidisciplinary team and deep regional expertise, our construc
               {services3.map((service, index) => (
                 <div
                   key={index}
-                  className={`service-card ${activeService === index ? 'active' : ''}`}
-                  onClick={() => setActiveService(index)}
+                  className={`service-card ${activeServiceConst === index ? 'active' : ''}`}
+                  onClick={() => setActiveServiceConst(index)}
                 >
                   <div className="service-card-header">
-                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                    <div className={`service-icon ${activeServiceConst === index ? 'active' : ''}`}>
                       {service.icon}
                     </div>
                     <h3 className="service-title">{service.title}</h3>
-                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                    <ChevronRight className={`service-arrow ${activeServiceConst === index ? 'active' : ''}`} />
                   </div>
                   <p className="service-description">{service.description}</p>
                 </div>
@@ -473,18 +640,18 @@ With a seasoned multidisciplinary team and deep regional expertise, our construc
               <div className="service-details-card">
                 <div className="service-details-header">
                   <div className="service-details-icon">
-                    {services[activeService].icon}
+                    {services3[activeServiceConst].icon}
                   </div>
-                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                  <h3 className="service-details-title">{services3[activeServiceConst].title}</h3>
                 </div>
                 
                 <p className="service-details-description">
-                  {services[activeService].description}
+                  {services3[activeServiceConst].description}
                 </p>
 
                 <div className="service-features">
-                  <h4 className="features-title">Key Features:</h4>
-                  {services[activeService].features.map((feature, index) => (
+                  <h4 className="features-title">Services:</h4>
+                  {services3[activeServiceConst].features.map((feature, index) => (
                     <div key={index} className="feature-item">
                       <CheckCircle className="feature-icon" />
                       <span className="feature-text">{feature}</span>
@@ -492,10 +659,7 @@ With a seasoned multidisciplinary team and deep regional expertise, our construc
                   ))}
                 </div>
 
-                <button className="service-details-btn">
-                  Learn More
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                
               </div>
             </div>
           </div>
@@ -511,7 +675,7 @@ With a seasoned multidisciplinary team and deep regional expertise, our construc
               World-Class Procurement Services
             </h2>
             <p className="section-description">
-We leverage deep global partnerships and a vast network of Original Equipment Manufacturers (OEMs), certified vendors, and international suppliers to source and deliver premium materials and equipment. From routine consumables to high-value project-critical assets, our procurement capabilities are tailored to meet project timelines and technical specifications with precision
+               our Procurement and Supply Chain Services are designed to be agile, responsive, and strategically aligned with our clients’ operational needs. We provide intelligent sourcing solutions that deliver value beyond cost savings—ensuring quality, reliability, and performance across the energy and industrial spectrum.
             </p>
           </div>
 
@@ -521,17 +685,17 @@ We leverage deep global partnerships and a vast network of Original Equipment Ma
               {services1.map((service, index) => (
                 <div
                   key={index}
-                  className={`service-card ${activeService === index ? 'active' : ''}`}
-                  onClick={() => setActiveService(index)}
+                  className={`service-card ${activeServiceConst === index ? 'active' : ''}`}
+                  onClick={() => setActiveServiceConst(index)}
                 >
                   <div className="service-card-header">
-                    <div className={`service-icon ${activeService === index ? 'active' : ''}`}>
+                    <div className={`service-icon ${activeServiceConst === index ? 'active' : ''}`}>
                       {service.icon}
                     </div>
                     <h3 className="service-title">{service.title}</h3>
-                    <ChevronRight className={`service-arrow ${activeService === index ? 'active' : ''}`} />
+                    <ChevronRight className={`service-arrow ${activeServiceConst === index ? 'active' : ''}`} />
                   </div>
-                  <p className="service-description">{service.description}</p>
+                  {/* <p className="service-description">{service.description}</p> */}
                 </div>
               ))}
             </div>
@@ -541,18 +705,18 @@ We leverage deep global partnerships and a vast network of Original Equipment Ma
               <div className="service-details-card">
                 <div className="service-details-header">
                   <div className="service-details-icon">
-                    {services[activeService].icon}
+                    {services1[activeServiceConst].icon}
                   </div>
-                  <h3 className="service-details-title">{services[activeService].title}</h3>
+                  <h3 className="service-details-title">{services1[activeServiceConst].title}</h3>
                 </div>
                 
                 <p className="service-details-description">
-                  {services[activeService].description}
+                  {services1[activeServiceConst].description}
                 </p>
 
                 <div className="service-features">
-                  <h4 className="features-title">Key Features:</h4>
-                  {services[activeService].features.map((feature, index) => (
+                  <h4 className="features-title">Services:</h4>
+                  {services1[activeServiceConst].features.map((feature, index) => (
                     <div key={index} className="feature-item">
                       <CheckCircle className="feature-icon" />
                       <span className="feature-text">{feature}</span>
@@ -560,10 +724,7 @@ We leverage deep global partnerships and a vast network of Original Equipment Ma
                   ))}
                 </div>
 
-                <button className="service-details-btn">
-                  Learn More
-                  <ArrowRight className="w-5 h-5" />
-                </button>
+                
               </div>
             </div>
           </div>
@@ -572,30 +733,26 @@ We leverage deep global partnerships and a vast network of Original Equipment Ma
 
       {/* CTA Section */}
       <section className="cta-sections">
-        <div id="cta" className={`cta-container ${isVisible.cta ? 'visible' : ''}`}>
-          <div className="cta-card">
-            <h2 className="cta-title">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="cta-description">
-           At Breakpoint Energy Services Limited, procurement is not just about sourcing materials—it’s about delivering certainty. Our commitment to operational excellence, transparency, and customer satisfaction positions us as the supplier of choice for forward-thinking energy companies across Nigeria, West Africa, and beyond.            </p>
-            <div className="cta-buttons">
-              <button className="btn-primarys">
-                
-                <ul>
-                <li><a href="/contact us">Get Started Today</a></li>
-                </ul>
-              </button>
-              <button className="btn-secondary">
-               
-                <ul>
-                <li><a href="/contact us">Contact us</a></li>
-                </ul>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div id="cta" className={`cta-container ${isVisible.cta ? 'visible' : ''}`}>
+    <div className="cta-card">
+      <h3 className="cta-title">
+        Tailored Solutions. Scalable Support.
+      </h3>
+      <p className="cta-description">
+        Whether it's a one-time supply or full-scale project procurement, we adapt to client needs with scalable solutions. Our strategic procurement programs help clients reduce lead times, minimize downtime, and improve cost-efficiency without compromising quality
+      </p>
+      <ul className="horizontal-list">
+        <li>We also offer:</li>
+        <li>Long-term supply agreements</li>
+        <li>Project-based procurement outsourcing</li>
+        <li>Vendor-managed inventory (VMI)</li>
+        <li>Digital procurement platforms with client access</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Footer */}
       <footer className="footer">

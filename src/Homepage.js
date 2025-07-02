@@ -13,6 +13,33 @@ import logoImage4 from './images/image4.jpg';
 import { Link } from 'react-router-dom';
 import './newsPage.css';
 
+ const values = [
+    {
+      title: "Intelligent Well Planning",
+      description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
+      image: logoImage3,
+      reverse: false
+    },
+    {
+      title: "Advanced Technologies",
+      description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
+      image: logoImage1,
+      reverse: true
+    },
+    {
+      title: "Safety & Environmental Stewardship",
+      description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
+      image: logoImage2,
+      reverse: false
+    },
+    {
+      title: "Real-Time Optimization",
+      description: "Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
+      image: logoImage4,
+      reverse: true
+    }
+  ];
+
 
 const Homepage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -337,12 +364,12 @@ const Homepage = () => {
               </li>
               </Link>
 
-               <Link to="/" className="nav-item has-dropdown">
+               {/* <Link to="/" className="nav-item has-dropdown">
               <li className="nav-link">
                   <span>Solutions</span>
-                  {/* <ChevronDown size={16} /> */}
+                  
               </li>
-              </Link>
+              </Link> */}
 
               
 
@@ -439,7 +466,7 @@ const Homepage = () => {
                 <a href="#commitment" className="hero-cta text-reveal" style={{ '--delay': '0.6s' }}>
                   <span>
                     <ul>
-                <li><a href="/product"> Discover More</a></li>
+                <li><a href="/products"> Our Services</a></li>
                 </ul> 
                   </span>
                   
@@ -480,7 +507,7 @@ const Homepage = () => {
       </section> */}
 
 {/* BreakPointSection */}
-      <BreakPointSection />
+      {/* <BreakPointSection /> */}
 
       {/* Solutions Section */}
       {/* <section className="solutions">
@@ -656,39 +683,14 @@ const Homepage = () => {
           <div className="container">
             <h2 className="section-title">Our Core Values</h2>
             <div className="space-y-16">
-              {[
-                {
-                  title: "Intelligent Well Planning",
-                  description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
-                  image: {logoImage3},
-                  reverse: false
-                },
-                {
-                  title: "Advanced Technologies",
-                  description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
-                  image: {logoImage1},
-                  reverse: true
-                },
-                {
-                  title: "Safety & Environmental Stewardship",
-                  description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
-                  image: {logoImage2},
-                  reverse: false
-                },
-                {
-                  title: "Real-Time Optimization",
-                  description: "sing advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
-                  image: {logoImage4},
-                  reverse: true
-                }
-              ].map((value, index) => (
+              {values.map((value, index) => (
                 <div 
                   key={index} 
                   className={`value-item ${value.reverse ? 'reverse' : ''}`}
                 >
                   <div className="value-image-container">
                     <img 
-                      src={logoImage4} 
+                      src= {value.image}
                       alt={value.title} 
                       className="value-image"
                     />
@@ -711,10 +713,10 @@ const Homepage = () => {
           <div className="featured-content">
             <h2>At Breakpoint Energy Services </h2>
             <p>our Rope Access Inspection services are more than just a method of working at height—they are a strategic advantage. We empower our clients to maintain operational integrity, enhance safety compliance, and control costs—without compromise.</p>
-            <a href="#" className="btn btn-secondary">
+            {/* <a href="#" className="btn btn-secondary">
               Explore Our Approach
               <ArrowRight size={16} />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -730,26 +732,26 @@ const Homepage = () => {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Latest News</h2>
-            <a href="#" className="view-all">View All News <ArrowRight size={14} /></a>
+            {/* <a href="#" className="view-all">View All News <ArrowRight size={14} /></a> */}
           </div>
           <div className="news-grid">
             <div className="news-card">
               <div className="news-date">May 10, 2025</div>
               <h3>BreakPoint Announces New Carbon Capture Technology</h3>
               <p>Breakthrough solution helps energy producers reduce emissions by up to 40%.</p>
-              <a href="#" className="news-link">Read More <ArrowRight size={14} /></a>
+              {/* <a href="#" className="news-link">Read More <ArrowRight size={14} /></a> */}
             </div>
             <div className="news-card">
               <div className="news-date">May 5, 2025</div>
               <h3>Q1 2025 Financial Results</h3>
               <p>BreakPoint reports strong growth in digital services and sustainable technology sectors.</p>
-              <a href="#" className="news-link">Read More <ArrowRight size={14} /></a>
+              {/* <a href="#" className="news-link">Read More <ArrowRight size={14} /></a> */}
             </div>
             <div className="news-card">
               <div className="news-date">April 28, 2025</div>
               <h3>BreakPoint Partners with Leading Research Institution</h3>
               <p>New alliance aims to develop next-generation geothermal solutions.</p>
-              <a href="#" className="news-link">Read More <ArrowRight size={14} /></a>
+              {/* <a href="#" className="news-link">Read More <ArrowRight size={14} /></a> */}
             </div>
           </div>
         </div>

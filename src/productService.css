@@ -175,8 +175,14 @@
 }
 
 /* Stats Section */
-.stats-sections{
-  padding: 5rem 1rem;
+
+.stats-sections {
+  display: flex;
+  padding: 8rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Optional: if you want full viewport height */
 }
 
 .stats-container {
@@ -379,6 +385,16 @@
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.3), 0 0 60px rgba(147, 51, 234, 0.2);
 }
 
+.service-details-second-card{
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3), 0 0 60px rgba(147, 51, 234, 0.2);
+}
+
 .service-details-header {
   display: flex;
   align-items: center;
@@ -564,6 +580,10 @@
   .service-details-card {
     padding: 1.5rem;
   }
+
+  .service-details-second-card {
+    padding: 1.5rem;
+  }
   
   .cta-card {
     padding: 2rem;
@@ -637,8 +657,34 @@ a:focus {
   .stat-card,
   .service-card,
   .service-details-card,
+  .service-details-second-card
   .cta-card {
     border: 2px solid #fff;
     background: rgba(255, 255, 255, 0.1);
   }
 }
+
+
+
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #1A0262;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.horizontal-list li:first-child {
+  font-weight: bold;
+  background-color: transparent;
+}
+

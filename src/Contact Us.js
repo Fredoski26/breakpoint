@@ -457,12 +457,12 @@ const ContactUs = () => {
               </li>
               </Link>
 
-               <Link to="/" className="nav-item has-dropdown">
+               {/* <Link to="/" className="nav-item has-dropdown">
               <li className="nav-link">
                   <span>Solutions</span>
-                  {/* <ChevronDown size={16} /> */}
+                  
               </li>
-              </Link>
+              </Link> */}
 
               
 

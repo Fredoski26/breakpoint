@@ -11,6 +11,33 @@ import './newsPage.css';
 import { Search, ChevronDown, ArrowRight, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+ const values = [
+    {
+      title: "Intelligent Well Planning",
+      description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
+      image: logoImage3,
+      reverse: false
+    },
+    {
+      title: "Advanced Technologies",
+      description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
+      image: logoImage1,
+      reverse: true
+    },
+    {
+      title: "Safety & Environmental Stewardship",
+      description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
+      image: logoImage2,
+      reverse: false
+    },
+    {
+      title: "Real-Time Optimization",
+      description: "Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
+      image: logoImage4,
+      reverse: true
+    }
+  ];
+
 export default function AboutUs() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -315,12 +342,12 @@ export default function AboutUs() {
                                </li>
                                </Link>
                  
-                                <Link to="/" className="nav-item has-dropdown">
+                                {/* <Link to="/" className="nav-item has-dropdown">
                                <li className="nav-link">
                                    <span>Solutions</span>
-                                   {/* <ChevronDown size={16} /> */}
+                                  
                                </li>
-                               </Link>
+                               </Link> */}
                  
                                
                  
@@ -497,39 +524,14 @@ export default function AboutUs() {
           <div className="container">
             <h2 className="section-title">Our Core Values</h2>
             <div className="space-y-16">
-              {[
-                {
-                  title: "Intelligent Well Planning",
-                  description: "We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity",
-                  image: {logoImage3},
-                  reverse: false
-                },
-                {
-                  title: "Advanced Technologies",
-                  description: "Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).",
-                  image: {logoImage1},
-                  reverse: true
-                },
-                {
-                  title: "Safety & Environmental Stewardship",
-                  description: "With strict adherence to international HSE standards, we conduct operations with a relentless focus on safety and minimal ecological footprint.",
-                  image: {logoImage2},
-                  reverse: false
-                },
-                {
-                  title: "Real-Time Optimization",
-                  description: "sing advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.",
-                  image: {logoImage4},
-                  reverse: true
-                }
-              ].map((value, index) => (
+              {values.map((value, index) => (
                 <div 
                   key={index} 
                   className={`value-item ${value.reverse ? 'reverse' : ''}`}
                 >
                   <div className="value-image-container">
                     <img 
-                      src={logoImage4} 
+                      src={value.image} 
                       alt={value.title} 
                       className="value-image"
                     />
@@ -567,10 +569,10 @@ export default function AboutUs() {
               Sustainability
             </h2>
             
-            <button className="cta-button">
+            {/* <button className="cta-button">
               <span className="button-text">Find out more</span>
               <ArrowRight className="button-icon" size={20} />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

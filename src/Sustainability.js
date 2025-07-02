@@ -188,12 +188,12 @@ const Sustainability = () => {
                         </li>
                         </Link>
           
-                         <Link to="/" className="nav-item has-dropdown">
+                         {/* <Link to="/" className="nav-item has-dropdown">
                         <li className="nav-link">
                             <span>Solutions</span>
-                            {/* <ChevronDown size={16} /> */}
+                            
                         </li>
-                        </Link>
+                        </Link> */}
           
                         
           
@@ -286,7 +286,7 @@ const Sustainability = () => {
           <p className="hero-subtitlee text-reveal" style={{ '--delay': '0.4s' }}>
             All inspectors hold ASNT, PCN, or equivalent certifications.
           </p>
-          <a href="#commitment" className="hero-cta text-reveal" style={{ '--delay': '0.6s' }}>
+          {/* <a href="#commitment" className="hero-cta text-reveal" style={{ '--delay': '0.6s' }}>
             <span>
              <ul>
                 <li><a href="/products">Explore Our Journey</a></li>
@@ -294,7 +294,7 @@ const Sustainability = () => {
             </span>
             
             <ArrowRight className="w-5 h-5 arrow-bounce" />
-          </a>
+          </a> */}
         </div>
         
         <div className="scroll-indicator">
@@ -602,7 +602,7 @@ const Sustainability = () => {
               <div className="button-content">
                 <span>
                  <ul>
-                <li><a href="/product"> Learn More</a></li>
+                <li><a href="/about"> Learn More</a></li>
                 </ul> 
                </span>
                 

@@ -109,7 +109,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Uncompromising Quality',
       description: 'We adhere strictly to API, ASME, DS-1, and ISO standards.',
-      imageUrl: logoImage1,
+      imageUrl: logoImage2,
       tag: 'Why Choose Us'
     },
      {
@@ -117,7 +117,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Technology-Driven',
       description: 'We invest in cutting-edge NDT equipment and digital inspection systems.',
-      imageUrl: logoImage1,
+      imageUrl: logoImage3,
       tag: 'Why Choose Us'
     },
      {
@@ -125,7 +125,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Safety and Compliance',
       description: 'Our inspections align with regulatory bodies and OEM requirements.',
-      imageUrl: logoImage1,
+      imageUrl: logoImage4,
       tag: 'Why Choose Us'
     },
     {
@@ -133,7 +133,7 @@ const observer = new IntersectionObserver(
       date: 'May 10, 2025',
       title: 'Driving Sustainable Performance in Unconventional Plays',
       description: 'How BreakPoint technologies are transforming production efficiency while reducing environmental impact.',
-      imageUrl: logoImage3,
+      imageUrl: logoImage2,
       tag: 'feature-stories'
     },
     {
@@ -141,7 +141,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Zero Compromise on Safety',
       description: 'A flawless track record of incident-free execution in hazardous offshore and onshore environments',
-      imageUrl: logoImage4 ,
+      imageUrl: logoImage1 ,
       tag: 'What Sets Our Rope Access Apart'
     },
     {
@@ -149,7 +149,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Rapid Deployment & Execution',
       description: 'We significantly reduce mobilization time and downtime, maximizing operational continuity and minimizing disruption.',
-      imageUrl: logoImage4 ,
+      imageUrl: logoImage3 ,
       tag: 'What Sets Our Rope Access Apart'
     },
     {
@@ -165,7 +165,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Cost-Efficiency',
       description: 'Reduced labor, equipment, and setup costs offer significant savings compared to traditional access methods',
-      imageUrl: logoImage4 ,
+      imageUrl: logoImage2 ,
       tag: 'What Sets Our Rope Access Apart'
     },
     {
@@ -173,7 +173,7 @@ const observer = new IntersectionObserver(
       date: 'April 28, 2025',
       title: 'Optimizing Production in Mature Fields',
       description: 'How an operator in the North Sea achieved 30% production increase through integrated technologies.',
-      imageUrl: logoImage1,
+      imageUrl: logoImage4,
       tag: 'case-studies'
     },
     {
@@ -181,7 +181,7 @@ const observer = new IntersectionObserver(
       date: 'June 15-18, 2025',
       title: 'BreakPoint at Offshore Technology Conference 2025',
       description: 'Join BreakPoint at OTC 2025 to discover the latest innovations in offshore energy technology.',
-      imageUrl: logoImage3,
+      imageUrl: logoImage1,
       tag: 'events'
     },
     {
@@ -189,7 +189,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Intelligent Well Planning',
       description: 'We develop robust drilling programs through integrated geological, geophysical, and reservoir modeling to ensure optimal trajectory, cost-effectiveness, and productivity',
-      imageUrl: logoImage2,
+      imageUrl: logoImage3,
       tag: 'What Sets Us Apart'
     },
      {
@@ -197,7 +197,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Advanced Technologies',
       description: 'Leveraging state-of-the-art rigs, automated drilling systems, and real-time downhole monitoring, we drive performance and minimize non-productive time (NPT).',
-      imageUrl: logoImage2,
+      imageUrl: logoImage4,
       tag: 'What Sets Us Apart'
     },
      {
@@ -213,7 +213,7 @@ const observer = new IntersectionObserver(
       date: '',
       title: 'Real-Time Optimization: ',
       description: 'Using advanced analytics and live data feeds, our experts make real-time decisions that enhance wellbore stability, improve penetration rates, and mitigate operational risks.',
-      imageUrl: logoImage2,
+      imageUrl: logoImage3,
       tag: 'What Sets Us Apart'
     }
   ];
@@ -274,12 +274,12 @@ const observer = new IntersectionObserver(
                         </li>
                         </Link>
           
-                         <Link to="/" className="nav-item has-dropdown">
+                         {/* <Link to="/" className="nav-item has-dropdown">
                         <li className="nav-link">
                             <span>Solutions</span>
-                            {/* <ChevronDown size={16} /> */}
+                           
                         </li>
-                        </Link>
+                        </Link> */}
           
                         
           
@@ -436,7 +436,7 @@ const observer = new IntersectionObserver(
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-700 mb-4 flex-grow">{item.description}</p>
                   <a href="#" className="flex items-center text-blue-800 font-medium hover:text-blue-600">
-                    Read more <ChevronRight size={16} className="ml-1" />
+                    {/* Read more <ChevronRight size={16} className="ml-1" /> */}
                   </a>
                 </div>
               </div>
@@ -498,7 +498,7 @@ const observer = new IntersectionObserver(
                 Access our media kit, company facts, executive bios, and brand guidelines
               </p>
               <a href="#" className="flex items-center text-blue-800 font-medium hover:text-blue-600">
-                Learn more <ArrowRight size={16} className="ml-1" />
+                {/* Learn more <ArrowRight size={16} className="ml-1" /> */}
               </a>
             </div>
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
@@ -507,7 +507,7 @@ const observer = new IntersectionObserver(
                 View our latest financial results, annual reports, and investor presentations
               </p>
               <a href="#" className="flex items-center text-blue-800 font-medium hover:text-blue-600">
-                Learn more <ArrowRight size={16} className="ml-1" />
+                {/* Learn more <ArrowRight size={16} className="ml-1" /> */}
               </a>
             </div>
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
@@ -516,7 +516,7 @@ const observer = new IntersectionObserver(
                 Get in touch with our media relations team or find your local BreakPoint office
               </p>
               <a href="#" className="flex items-center text-blue-800 font-medium hover:text-blue-600">
-                Learn more <ArrowRight size={16} className="ml-1" />
+                {/* Learn more <ArrowRight size={16} className="ml-1" /> */}
               </a>
             </div>
           </div>
