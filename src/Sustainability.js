@@ -280,8 +280,8 @@ const Sustainability = () => {
           }}
         >
           <h1 className="hero-titlee">
-            <span className="text-reveal">Sustainable</span>
-            <span className="text-reveal" style={{ '--delay': '0.2s' }}>Future</span>
+            <span className="text-reveal">Sustainability</span>
+            <span className="text-reveal" style={{ '--delay': '0.2s' }}></span>
           </h1>
           <p className="hero-subtitlee text-reveal" style={{ '--delay': '0.4s' }}>
             All inspectors hold ASNT, PCN, or equivalent certifications.
