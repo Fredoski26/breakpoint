@@ -579,12 +579,12 @@ const Sustainability = () => {
         <div className="cta-particles"></div>
         <div className="cta-content">
           <h2 className="cta-title">
-            <span className="text-glow">Join Our</span>
-            <span className="text-glow" style={{ '--delay': '0.2s' }}>Sustainable</span>
-            <span className="text-glow" style={{ '--delay': '0.4s' }}>Mission</span>
+            <span className="text-glow">Join </span>
+            <span className="text-glow" style={{ '--delay': '0.2s' }}>BreakPoint</span>
+            <span className="text-glow" style={{ '--delay': '0.4s' }}>Today</span>
           </h2>
           <p className="cta-description typewriter-effect">
-            Partner with us to create a more sustainable future through innovative technology and collaborative action.
+           our team comprises internationally certified inspectors and multi-discipline NDT professionals with vast field experience.
           </p>
           <div className="cta-buttons">
             <a href="#" className="btn-primarye magnetic-button">
@@ -592,7 +592,12 @@ const Sustainability = () => {
                 <Play className="w-5 h-5" />
                 <span>
                  <ul>
-                <li><a href="/contact us"> Get Involved</a></li>
+
+                     <Link to="/contact us" >
+                        <li><a href="/contact us"> Get Involved</a></li>
+                        </Link>
+
+                
                 </ul> 
                </span>
               </div>
@@ -602,7 +607,9 @@ const Sustainability = () => {
               <div className="button-content">
                 <span>
                  <ul>
-                <li><a href="/about"> Learn More</a></li>
+                 <Link to="/about" >
+                        <li><a href="/about"> Learn More</a></li>
+                        </Link>
                 </ul> 
                </span>
                 
